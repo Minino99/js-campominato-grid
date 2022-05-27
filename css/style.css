@@ -1,0 +1,22 @@
+.headertitle{
+ font-size: 2.5rem;
+ font-weight: 700;
+}
+
+
+body{
+ height: 100vh;
+}
+
+.mainbody{
+ background-color: #7CFFD2;
+ height: 85%;
+}
+
+.header{
+ height: 10%;
+}
+
+.footer{
+ height: 5%;
+}
