@@ -25,9 +25,9 @@ if (difficulty.value === "hard"){
  grid = generateGrid(7, 7, squareContainer);
 }
 
-const square = document.querySelectorAll(".square");
+const squares = document.querySelectorAll(".square");
 
-square.forEach(square => {
+squares.forEach(square => {
  square.addEventListener('click', function() {
    square.classList.toggle("clicked")
  });
