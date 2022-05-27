@@ -9,7 +9,6 @@ for (let i = 1; i <= (gridX * gridY); i++){
 const squareContainer = document.getElementById("squarecontainer");
 const playButton = document.getElementById("playbtn");
 let difficulty = document.getElementById("difficultySelect");
-
 playButton.addEventListener("click", function() {
 
 console.log (difficulty.value)
@@ -25,8 +24,13 @@ if (difficulty.value === "medium"){
 if (difficulty.value === "hard"){
  grid = generateGrid(7, 7, squareContainer);
 }
-})
 
-squareContainer.addEventListener("click", function(){
-console.log(this)
-})
+const square = document.querySelectorAll(".square");
+
+square.forEach(square => {
+ square.addEventListener('click', function() {
+   square.classList.toggle("clicked")
+ });
+
+});
+});
