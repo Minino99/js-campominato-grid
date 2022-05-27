@@ -27,7 +27,6 @@ if (difficulty.value === "hard"){
 }
 })
 
-if (this.squareContainer){
- this.squareContainer.classList.add("clicked");
-}
-
+squareContainer.addEventListener("click", function(){
+console.log("hai cliccato")
+})
